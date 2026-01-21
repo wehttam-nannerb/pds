@@ -1,0 +1,7 @@
+:80 {
+  reverse_proxy pds:3000
+}
+:443 {
+  tls /etc/caddy/certs/pds.explainablereasoning.net.pem /etc/caddy/certs/pds.explainablereasoning.net-key.pem
+  reverse_proxy pds:3000
+}

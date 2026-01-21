@@ -1,2 +1,6 @@
 .DS_Store
 node_modules
+pds.env
+pds_vol/*sqlite*
+pds_vol/actors
+pds_vol/caddy_data/**

@@ -10,10 +10,10 @@ COMMAND="${1:-help}"
 shift || true
 
 # Ensure the user is root, since it's required for most commands.
-if [[ "${EUID}" -ne 0 ]]; then
-  echo "ERROR: This script must be run as root"
-  exit 1
-fi
+# if [[ "${EUID}" -ne 0 ]]; then
+#  echo "ERROR: This script must be run as root"
+#  exit 1
+#fi
 
 # Download the script, if it exists.
 SCRIPT_URL="${PDSADMIN_BASE_URL}/${COMMAND}.sh"
